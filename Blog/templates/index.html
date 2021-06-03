@@ -1,0 +1,39 @@
+<!-- <h1>Home Page</h1> -->
+<!-- <h1>Home Page 2</h1> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home Page 3</h1>
+</body>
+</html> -->
+
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<br>
+<h1>Home Page</h1>
+<br>
+<div>
+    <div class="bg-light p-5 rounded">
+        <div class="col-sm-8 mx-auto">
+            <h1>Welcome</h1>
+            <p>Welcome to Imaad Fakier's Blog! Here I'll be talking about everything related to technology as well as some other interesting topics such as trading, artificial intelligence, and more.</p>
+            <p>Go check out all the project's I've done and applications I've developed <a href="https://github.com/imaadfakier">here</a>.</p>
+            <p>
+                <a class="btn btn-primary" href="/posts" role="button">Check out blog posts &raquo;</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

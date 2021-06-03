@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Posts</title>
+{% endblock %}
+
+{% block body %}
+<br>
+<div>
+    <h1 style="display: inline;">All Posts</h1>
+    <a style=" display: inline; float:right;" class="btn btn-success" href="/posts/new">+ New Post</a>
+</div>
+<hr>
+    <!-- <hr>
+    <br>
+    <h2>Create New Blog Post:</h2>
+    <form action="/posts" method="POST">
+        Title:
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title">
+        <input class="form-control" type="text" name="title" id="title" placeholder="Enter Title" aria-label="Enter Title">
+        <br>
+        Author:
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author">
+        <input class="form-control" type="text" name="author" id="author" placeholder="Enter Author" aria-label="Enter Author">
+        <br>
+        Post:
+        <input type="text" name="content" id="content">
+        <div class="form-group">
+        <label for="content">Post:</label>
+        <textarea class="form-control" name="content" id="content" placeholder="Enter Content" aria-label="Enter Content" rows="3"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Post">
+    </form>
+    <br> 
+    <hr> -->
+
+    {% for post in posts %}
+        <br>
+        <h2>{{ post.title }}</h2>
+
+        {% if post.author %}
+            <!-- <h3>By: {#{ post.author }#}</h3> -->
+            <!-- <h3>By: {{ post.author }}</h3> -->
+            <small>Written by: {{ post.author }} on {{ post.date_posted }}</small>
+        {% else %}
+            <!-- <h3>By: N/A</h3> -->
+            <small>Written by: Unknown on {{ post.date_posted }}</small>
+        {% endif %}
+        <br>
+        <br>
+        <p style="white-space:pre-wrap">{{ post.content }}</p>
+        <a class="btn btn-danger" href="/posts/delete/{{ post.id }}">Delete</a>
+        <a class="btn btn-primary" href="/posts/edit/{{ post.id }}">Edit</a>
+        <br>
+        <br>
+        <hr>
+    {% endfor %}
+
+{% endblock %}
