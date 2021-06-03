@@ -1,0 +1,412 @@
+<!--&lt;!&ndash;<h1>Home Page</h1>&ndash;&gt;-->
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    &lt;!&ndash; Required meta tags &ndash;&gt;-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"-->
+<!--          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">-->
+
+<!--    &lt;!&ndash;<title>Hello, world!</title>&ndash;&gt;-->
+<!--    <title>Market Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<nav class="navbar navbar-expand-md navbar-dark bg-dark">-->
+<!--    &lt;!&ndash;<a class="navbar-brand" href="#">Jim Shaped Coding Market</a>&ndash;&gt;-->
+<!--    <a class="navbar-brand" href="#">Flask Market</a>-->
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--    <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--        <ul class="navbar-nav mr-auto">-->
+<!--            <li class="nav-item active">-->
+<!--                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Market</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <ul class="navbar-nav">-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Login</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Register</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</nav>-->
+
+<!--&lt;!&ndash;<h1>Hello, world!</h1>&ndash;&gt;-->
+<!--<h1>Market Page</h1>-->
+<!--&lt;!&ndash;<p>{{ item_name }}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p>{{ items }}</p>&ndash;&gt;-->
+<!--<table class="table table-hover table-dark">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        &lt;!&ndash; Your Columns HERE &ndash;&gt;-->
+<!--        <th scope="col">ID</th>-->
+<!--        <th scope="col">Name</th>-->
+<!--        <th scope="col">Barcode</th>-->
+<!--        <th scope="col">Price</th>-->
+<!--        <th scope="col">Options</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    &lt;!&ndash; Your rows inside the table HERE: &ndash;&gt;-->
+<!--    {% for item in items %}-->
+<!--    <tr>-->
+<!--        &lt;!&ndash;<td>Value for ID</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Name</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Barcode</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Price</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for ID</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Name</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Barcode</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Price</td>&ndash;&gt;-->
+<!--        <td>{{ item.id }}</td>-->
+<!--        <td>{{ item.name }}</td>-->
+<!--        <td>{{ item.barcode }}</td>-->
+<!--        <td>${{ item.price }}</td>-->
+<!--        <td>-->
+<!--            <button class="btn btn-outline btn-info">More Info</button>-->
+<!--            <button class="btn btn-outline btn-success">Purchase This Item</button>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    {% endfor %}-->
+<!--    </tbody>-->
+<!--</table>-->
+
+<!--&lt;!&ndash; Optional JavaScript; choose one of the two! &ndash;&gt;-->
+
+<!--&lt;!&ndash; Option 1: jQuery and Bootstrap Bundle (includes Popper) &ndash;&gt;-->
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"-->
+<!--        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"-->
+<!--        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"-->
+<!--        crossorigin="anonymous"></script>-->
+
+<!--&lt;!&ndash; Option 2: jQuery, Popper.js, and Bootstrap JS-->
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>-->
+<!--&ndash;&gt;-->
+<!--</body>-->
+<!--<style>-->
+<!--    body {-->
+<!--        background-color: #212121;-->
+<!--        color: white;-->
+<!--    }-->
+<!--</style>-->
+<!--</html>-->
+
+
+<!--{#% extends 'base.html' %#}-->
+
+<!--{#% block title %#}-->
+<!--Market Page-->
+<!--{#% endblock %#}-->
+
+<!--{#% block content %#}-->
+<!--&lt;!&ndash;<div class="row" style="margin-top:20px; margin-left:20px;">&ndash;&gt;-->
+<!--<div class="row" style="margin: 20px auto auto auto">-->
+<!--  <div class="col-8">-->
+<!--      <table class="table table-hover table-dark">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        &lt;!&ndash; Your Columns HERE &ndash;&gt;-->
+<!--        <th scope="col">ID</th>-->
+<!--        <th scope="col">Name</th>-->
+<!--        <th scope="col">Barcode</th>-->
+<!--        <th scope="col">Price</th>-->
+<!--        <th scope="col">Options</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    &lt;!&ndash; Your rows inside the table HERE: &ndash;&gt;-->
+<!--    {% for item in items %}-->
+<!--    <tr>-->
+<!--        &lt;!&ndash;<td>Value for ID</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Name</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Barcode</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Price</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for ID</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Name</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Barcode</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Price</td>&ndash;&gt;-->
+<!--        <td>{{ item.id }}</td>-->
+<!--        <td>{{ item.name }}</td>-->
+<!--        <td>{{ item.barcode }}</td>-->
+<!--        <td>${{ item.price }}</td>-->
+<!--        <td>-->
+<!--            <button class="btn btn-outline btn-info">More Info</button>-->
+<!--            <button class="btn btn-outline btn-success">Purchase This Item</button>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    {% endfor %}-->
+<!--    </tbody>-->
+<!--</table>-->
+<!--  </div>-->
+<!--  <div class="col-4">col-4</div>-->
+<!--</div>-->
+<!--&lt;!&ndash;<table class="table table-hover table-dark">&ndash;&gt;-->
+<!--&lt;!&ndash;    <thead>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash; Your Columns HERE &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <th scope="col">ID</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th scope="col">Name</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th scope="col">Barcode</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th scope="col">Price</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th scope="col">Options</th>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    </thead>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tbody>&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; Your rows inside the table HERE: &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    {% for item in items %}&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;<td>Value for ID</td>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;<td>Value for Name</td>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;<td>Value for Barcode</td>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;<td>Value for Price</td>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;<td>Value for ID</td>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;<td>Value for Name</td>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;<td>Value for Barcode</td>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;<td>Value for Price</td>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>{{ item.id }}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>{{ item.name }}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>{{ item.barcode }}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>${{ item.price }}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <button class="btn btn-outline btn-info">More Info</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            <button class="btn btn-outline btn-success">Purchase This Item</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        </td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    {% endfor %}&ndash;&gt;-->
+<!--&lt;!&ndash;    </tbody>&ndash;&gt;-->
+<!--&lt;!&ndash;</table>&ndash;&gt;-->
+<!--{#% endblock %#}-->
+
+<!--&lt;!&ndash;<h1>Home Page</h1>&ndash;&gt;-->
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    &lt;!&ndash; Required meta tags &ndash;&gt;-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"-->
+<!--          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">-->
+<!--    &lt;!&ndash;<title>Hello, world!</title>&ndash;&gt;-->
+<!--    <title>Market Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<nav class="navbar navbar-expand-md navbar-dark bg-dark">-->
+<!--    &lt;!&ndash;<a class="navbar-brand" href="#">Jim Shaped Coding Market</a>&ndash;&gt;-->
+<!--    <a class="navbar-brand" href="#">Flask Market</a>-->
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--    <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--        <ul class="navbar-nav mr-auto">-->
+<!--            <li class="nav-item active">-->
+<!--                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Market</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <ul class="navbar-nav">-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Login</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Register</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</nav>-->
+<!--&lt;!&ndash;<h1>Hello, world!</h1>&ndash;&gt;-->
+<!--<h1>Market Page</h1>-->
+<!--&lt;!&ndash;<p>{{ item_name }}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p>{{ items }}</p>&ndash;&gt;-->
+<!--<table class="table table-hover table-dark">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        &lt;!&ndash; Your Columns HERE &ndash;&gt;-->
+<!--        <th scope="col">ID</th>-->
+<!--        <th scope="col">Name</th>-->
+<!--        <th scope="col">Barcode</th>-->
+<!--        <th scope="col">Price</th>-->
+<!--        <th scope="col">Options</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    &lt;!&ndash; Your rows inside the table HERE: &ndash;&gt;-->
+<!--    {% for item in items %}-->
+<!--    <tr>-->
+<!--        &lt;!&ndash;<td>Value for ID</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Name</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Barcode</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Price</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for ID</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Name</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Barcode</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Price</td>&ndash;&gt;-->
+<!--        <td>{{ item.id }}</td>-->
+<!--        <td>{{ item.name }}</td>-->
+<!--        <td>{{ item.barcode }}</td>-->
+<!--        <td>${{ item.price }}</td>-->
+<!--        <td>-->
+<!--            <button class="btn btn-outline btn-info">More Info</button>-->
+<!--            <button class="btn btn-outline btn-success">Purchase This Item</button>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    {% endfor %}-->
+<!--    </tbody>-->
+<!--</table>-->
+<!--&lt;!&ndash; Optional JavaScript; choose one of the two! &ndash;&gt;-->
+<!--&lt;!&ndash; Option 1: jQuery and Bootstrap Bundle (includes Popper) &ndash;&gt;-->
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"-->
+<!--        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"-->
+<!--        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--&lt;!&ndash; Option 2: jQuery, Popper.js, and Bootstrap JS-->
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>-->
+<!--&ndash;&gt;-->
+<!--</body>-->
+<!--<style>-->
+<!--    body {-->
+<!--        background-color: #212121;-->
+<!--        color: white;-->
+<!--    }-->
+<!--</style>-->
+<!--</html>-->
+
+{% extends 'base.html' %}
+
+{% block title %}
+Market Page
+{% endblock %}
+
+{% block content %}
+<!--{#% include 'includes/items_modals.html' %#}-->
+<!--<div class="row" style="margin-top:20px; margin-left:20px;">-->
+<div class="row" style="margin: 20px auto auto auto">
+   <div class="col-8">
+       <h2>Available Items To Purchase</h2>
+       <p>Click on the desired item to purchase it</p>
+       <br>
+      <table class="table table-hover table-dark">
+         <thead>
+            <tr>
+               <!-- Your Columns HERE -->
+               <th scope="col">ID</th>
+               <th scope="col">Name</th>
+               <th scope="col">Barcode</th>
+               <th scope="col">Price</th>
+               <th scope="col">Options</th>
+            </tr>
+         </thead>
+         <tbody>
+            <!-- Your rows inside the table HERE: -->
+            {% for item in items %}
+            {% include 'includes/items_modals.html' %}
+            <tr>
+               <!--<td>Value for ID</td>-->
+               <!--<td>Value for Name</td>-->
+               <!--<td>Value for Barcode</td>-->
+               <!--<td>Value for Price</td>-->
+               <!--<td>Value for ID</td>-->
+               <!--<td>Value for Name</td>-->
+               <!--<td>Value for Barcode</td>-->
+               <!--<td>Value for Price</td>-->
+               <td>{{ item.id }}</td>
+               <td>{{ item.name }}</td>
+               <td>{{ item.barcode }}</td>
+               <td>${{ item.price }}</td>
+               <td>
+                  <button class="btn btn-outline btn-info" data-toggle="modal" data-target="#Modal-MoreInfo-{{ item.id }}">More Info</button>
+                  <button class="btn btn-outline btn-success" data-toggle="modal" data-target="#Modal-PurchaseConfirm-{{ item.id }}">Purchase This Item</button>
+               </td>
+            </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+   </div>
+   <div class="col-4">
+      <!--Purchased Items-->
+      <h2>Purchased Items</h2>
+      <p>You can sell either of your purchased items by clicking on it</p>
+      <br>
+      <div class="row">
+          {% for purchased_item in purchased_items %}
+          {% include 'includes/purchased_items_modals.html' %}
+          <div class="col-md-6">
+              <div style="margin-bottom: 5px" class="card text-center bg-dark">
+                  <div class="card-body">
+<!--                         <h5 class="card-title">Card Title</h5>-->
+<!--                         <button type="button" class="btn btn-outline-danger" style="margin-bottom: 5px"-->
+<!--                                 data-toggle="modal" data-target="#YourDataTarget">-->
+<!--                            Sell Item-->
+<!--                         </button>-->
+<!--                         <p class="card-text"><strong>Additional Text</strong></p>-->
+                      <h5 class="card-title">{{ purchased_item.name }}</h5>
+                      <button type="button" class="btn btn-outline-danger" style="margin-bottom: 5px"
+                              data-toggle="modal" data-target="#Modal-SellConfirm-{{ purchased_item.id }}">
+                          Sell Item
+                      </button>
+                      <p class="card-text"><strong>
+                          This item costs ${{ purchased_item.price }}
+                      </strong></p>
+                  </div>
+              </div>
+          </div>
+         {% endfor %}
+      </div>
+   </div>
+</div>
+<!--<table class="table table-hover table-dark">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        &lt;!&ndash; Your Columns HERE &ndash;&gt;-->
+<!--        <th scope="col">ID</th>-->
+<!--        <th scope="col">Name</th>-->
+<!--        <th scope="col">Barcode</th>-->
+<!--        <th scope="col">Price</th>-->
+<!--        <th scope="col">Options</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    &lt;!&ndash; Your rows inside the table HERE: &ndash;&gt;-->
+<!--    {% for item in items %}-->
+<!--    <tr>-->
+<!--        &lt;!&ndash;<td>Value for ID</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Name</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Barcode</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Price</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for ID</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Name</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Barcode</td>&ndash;&gt;-->
+<!--        &lt;!&ndash;<td>Value for Price</td>&ndash;&gt;-->
+<!--        <td>{{ item.id }}</td>-->
+<!--        <td>{{ item.name }}</td>-->
+<!--        <td>{{ item.barcode }}</td>-->
+<!--        <td>${{ item.price }}</td>-->
+<!--        <td>-->
+<!--            <button class="btn btn-outline btn-info">More Info</button>-->
+<!--            <button class="btn btn-outline btn-success">Purchase This Item</button>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    {% endfor %}-->
+<!--    </tbody>-->
+<!--</table>-->
+{% endblock %}

@@ -1,0 +1,49 @@
+<!--NOTE: CTRL + F to search for and replace-->
+
+<style>
+  .modal-content {
+    background-color: #212121
+  }
+</style>
+
+<!-- Sell Confirmation -->
+<!--<div class="modal fade" id="Modal-SellConfirm-{#{ item.id }#}"-->
+<div class="modal fade" id="Modal-SellConfirm-{{ purchased_item.id }}"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">
+          <!-- Here goes the title -->
+          <!--{#{ item.name }#}-->
+          {{ purchased_item.name }}
+        </h5>
+        <button type="button" class="close"
+                data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Here goes the text/paragraph -->
+        <form method="POST">
+          {{ sell_form.hidden_tag() }}
+          <!--<h4 class="text-center">Are you sure you want to sell your {#{ item.name }#}?</h4>-->
+          <h4 class="text-center">Are you sure you want to sell your {{ purchased_item.name }}?</h4>
+          <br>
+          <h6 class="text-center">By clicking sell item, you will return the given product back to the market.</h6>
+          <br>
+          <!--<input id="submit" name="submit" type="submit" value="Sell Item">-->
+          <!--<input id="sold_item" name="sold_item" type="hidden" value="{#{ item.name }#}">-->
+          <input id="sold_item" name="sold_item" type="hidden" value="{{ purchased_item.name }}">
+          {{ sell_form.submit(class='btn btn-outline-danger btn-block') }}
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"
+                data-dismiss="modal">Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
